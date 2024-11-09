@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+
+body {
+  margin: 0;
+  font-family: "JetBrains Mono";
+  background-color: #3b3947;
+  color: #fff;
+}
+
+.nav {
+  padding: 1px;
+  background-color: #4d4963;
+  text-align: center;
+}
+
+.content {
+  height: 600px;
+  width: 60vw;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin: auto;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  background-color: rgb(55, 121, 179);
+  box-shadow: 0 0 1rem #000;
+  text-align: center;
+  display: grid;
+  justify-items: center;
+  align-content: space-between;
+  position: relative;
+}
+
+.head {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.categ-menu {
+  cursor: pointer;
+
+  &:active {
+    transform: scale(0.95);
+  }
+}
+
+#cpy {
+  font-size: larger;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  padding: 10px;
+  background-color: rgb(33, 65, 94);
+  cursor: pointer;
+
+  &:active {
+    transform: scale(0.95);
+  }
+}
+
+p {
+  position: absolute;
+  right: 4rem;
+  padding: 4px 7px;
+  border-radius: 7px;
+  background-color: rgb(33, 65, 94);
+  transition: all ease 0.3s;
+  pointer-events: none;
+}
+
+.cpy-alert {
+  opacity: 0;
+  transform: translate(2.7rem);
+}
+
+.categ-menu,
+.categ-items {
+  width: 150px;
+  padding: 7px;
+  border-radius: 7px;
+  background-color: rgb(33, 65, 94);
+}
+
+.categ-items {
+  position: absolute;
+  top: 3.85rem;
+  transition: all ease 0.3s;
+}
+
+.added-items {
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: rgb(104, 151, 192);
+  }
+}
+
+.hidden-items {
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(-0.5rem);
+}
+
+#get-joke {
+  border-radius: 7px;
+  border: none;
+  cursor: pointer;
+  font-size: large;
+  font-family: "JetBrains Mono";
+  padding: 10px 30px;
+  color: #fff;
+  background-color: lightcoral;
+  box-shadow: 0 6px 0 #000;
+  transition: all ease 0.2s;
+  position: relative;
+}
+
+#get-joke:active {
+  transform: translateY(3px);
+  box-shadow: none;
+}
