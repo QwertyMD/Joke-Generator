@@ -1,2 +1,2 @@
-# Random Joke Generator with categories (can be copied too)
+# Random Joke Generator with categories
 # https://qwertymd.github.io/Joke-Generator
